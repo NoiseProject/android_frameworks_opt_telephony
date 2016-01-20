@@ -90,7 +90,7 @@ public class SIMRecords extends IccRecords {
     public String toString() {
         return "SimRecords: " + super.toString()
                 + " mVmConfig" + mVmConfig
-                + " callForwardingEnabled=" + mCallForwardingEnabled
+                + " callForwardingEnabled=" + mCallForwardingStatus
                 + " spnState=" + mSpnState
                 + " mCphsInfo=" + mCphsInfo
                 + " mCspPlmnEnabled=" + mCspPlmnEnabled
@@ -1915,7 +1915,7 @@ public class SIMRecords extends IccRecords {
         pw.println(" extends:");
         super.dump(fd, pw, args);
         pw.println(" mVmConfig=" + mVmConfig);
-        pw.println(" mCallForwardingEnabled=" + mCallForwardingEnabled);
+        pw.println(" mCallForwardingStatus=" + mCallForwardingStatus);
         pw.println(" mSpnState=" + mSpnState);
         pw.println(" mCphsInfo=" + mCphsInfo);
         pw.println(" mCspPlmnEnabled=" + mCspPlmnEnabled);
